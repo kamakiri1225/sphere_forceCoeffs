@@ -1,0 +1,36 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      surfaceFeatureExtractDict;
+}
+Cuboid.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}
+sphereMeshed.stl
+{
+    extractionMethod extractFromSurface;
+    extractFromSurfaceCoeffs
+    {
+        includedAngle 165.0;
+    }
+    subsetFeatures
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+    }
+    writeObj yes;
+}

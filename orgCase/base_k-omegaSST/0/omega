@@ -1,0 +1,44 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    0;
+    object      omega;
+}
+dimensions      [0 0 -1 0 0 0 0];
+internalField uniform 1.78;
+
+boundaryField
+{
+    ball
+    {
+        type omegaWallFunction;
+        value uniform  1.78;
+    }
+    XMin
+    {
+        type fixedValue;
+        value uniform 0.001;
+    }
+    XMax
+    {
+        type zeroGradient;
+    }
+    YMin
+    {
+        type zeroGradient;
+    }
+    YMax
+    {
+        type zeroGradient;
+    }
+    ZMin
+    {
+        type zeroGradient;
+    }
+    ZMax
+    {
+        type zeroGradient;
+    }
+}

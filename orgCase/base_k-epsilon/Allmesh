@@ -1,0 +1,10 @@
+#!/bin/sh
+cd ${0%/*} || exit 1
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+foamCleanPolyMesh
+blockMesh
+decomposePar
+mpirun -np 4 snappyHexMesh -parallel
+reconstructParMesh -latestTime -mergeTol 1e-6
+rm -rf ./processor*
