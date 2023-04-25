@@ -15,4 +15,21 @@
 ## blockMeshで球体周りの抗力係数(007_case)
 ```bash
 cd 001_mesh
+cd 001_inner
+blockMesh
+cd ../002_outer
+blockMesh
+cd ..
+cp -r 001_inner 003_merge
+mergeMeshes -overwrite 003_merge 002_outer
+cd ../002_cyclicAMI_run
+changeDictionary
+extrudeMesh
+simpleFoam > log.simpleFoam &
 ```
+
+1. [【回転するバスケットボールまわりの流れ(1)】FreeCADで作るバスケットボール](https://takun-physics.net/13185/)
+2. [【回転するバスケットボールまわりの流れ(2)】ボール周辺をblockMeshでメッシュ作成](https://takun-physics.net/14594/)
+3. [【回転するバスケットボールまわりの流れ(3)】外部領域をblockMeshでメッシュ作成](https://takun-physics.net/15983/)
+4. [【回転するバスケットボールまわりの流れ(4)】OpenFOAMで無回転の球体まわりの流れ](https://takun-physics.net/16006/)
+5. [【回転するバスケットボールまわりの流れ(5)】球体周りの抗力係数が文献値と合わない原因](https://takun-physics.net/16043/)
