@@ -1,0 +1,82 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+
+application     simpleFoam;
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         1000;
+deltaT          1.0;
+adjustTimeStep  no;
+maxCo           0.9;
+writeControl    timeStep;
+writeInterval   50;
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  6;
+writeCompression off;
+timeFormat      general;
+timePrecision   6;
+runTimeModifiable yes;
+
+functions
+{
+    
+    forceCoeffs(sphereMeshed)
+    {
+        type forceCoeffs;
+        libs ("libforces.so");
+        writeControl timeStep;
+        timeInterval 1;
+        log no;
+        patches (ball);
+        rho rhoInf;
+        rhoInf 1;
+        liftDir (0 1 0);
+        dragDir (1 0 0);
+        CofR (0 0 0);
+        pitchAxis (0 0 1);
+        magUInf 1.0;
+        lRef 0.25;
+        Aref 0.05144576;
+    }
+
+    continuityError1
+    {
+        type continuityError;
+        libs
+        (
+            fieldFunctionObjects
+        ); 	// Mandatory entries (unmodifiable)// Optional entries (runtime modifiable)
+        phi phi; 	// Optional (inherited) entries
+        writePrecision 8;
+        writeToFile yes;
+        useUserTime yes;
+        region region0;
+        enabled yes;
+        log yes;
+        timeStart 0;
+        timeEnd 6000;
+        executeControl timeStep;
+        executeInterval 1;
+        writeControl timeStep;
+        writeInterval 50;
+    }
+
+
+    residuals
+    {   
+        type            solverInfo;
+        libs            ("libutilityFunctionObjects.so");
+        fields          (U p k omega);
+    }
+    //#includeFunc residuals(U,p,k,epsilon);
+    #includeFunc yPlus;
+    #includeFunc CourantNo;
+  }

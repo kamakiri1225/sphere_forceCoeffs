@@ -1,0 +1,139 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale   1;
+verbose yes;
+
+// basketball r = 0.125m
+r_in    0.128;
+r_ami   0.30;
+r_out   0.5;
+
+geometry
+{
+    ball
+    {
+        type   sphere;
+        origin (0 0 0);
+        radius $r_in;
+    }
+    ami
+    {
+        type   sphere;
+        origin (0 0 0);
+        radius $r_ami;
+    }
+    /* outer
+    {
+        type   cylinder;
+        point1 (-1 0 0);
+        point2 (3 0 0);
+        radius $r_out;
+    }
+    */
+}
+
+
+n    24;
+
+v  #calc "1.0/sqrt(3.0)";
+a  #calc "1.0/sqrt(2.0)";
+ 
+ v_in #calc "$r_in*$v";
+mv_in #calc "-$v_in";
+ a_in #calc "$r_in*$a";
+ma_in #calc "-$a_in";
+
+ v_ami #calc "$r_ami*$v";
+mv_ami #calc "-$v_ami";
+ a_ami #calc "$r_ami*$a";
+ma_ami #calc "-$a_ami";
+
+ a_out #calc "$r_out*$a";
+ma_out #calc "-$a_out";
+
+vertices
+(
+    ($mv_in $mv_in $mv_in) // 0
+    ( $v_in $mv_in $mv_in) // 1
+    ( $v_in  $v_in $mv_in) // 2
+    ($mv_in  $v_in $mv_in) // 3
+    ($mv_in $mv_in  $v_in) // 4
+    ( $v_in $mv_in  $v_in) // 5
+    ( $v_in  $v_in  $v_in) // 6
+    ($mv_in  $v_in  $v_in) // 7
+
+    ($mv_ami $mv_ami $mv_ami) // 8
+    ( $v_ami $mv_ami $mv_ami) // 9
+    ( $v_ami  $v_ami $mv_ami) // 10
+    ($mv_ami  $v_ami $mv_ami) // 11
+    ($mv_ami $mv_ami  $v_ami) // 12
+    ( $v_ami $mv_ami  $v_ami) // 13
+    ( $v_ami  $v_ami  $v_ami) // 14
+    ($mv_ami  $v_ami  $v_ami) // 15
+);
+
+blocks
+(
+    hex ( 9  8 12 13  1  0  4  5) ($n $n $n) simpleGrading (1 1 1)
+    /*
+    hex (10  9 13 14  2  1  5  6) ($n $n $n) simpleGrading (1 1 1)
+    hex (11 10 14 15  3  2  6  7) ($n $n $n) simpleGrading (1 1 1)
+    hex ( 8 11 15 12  0  3  7  4) ($n $n $n) simpleGrading (1 1 1)
+    hex ( 8  9 10 11  0  1  2  3) ($n $n $n) simpleGrading (1 1 1)
+    hex (13 12 15 14  5  4  7  6) ($n $n $n) simpleGrading (1 1 1)
+    */
+);
+
+
+edges
+(
+    arc  8  9 (0 $ma_ami $ma_ami)
+    arc 12 13 (0 $ma_ami $a_ami)
+    arc  8 12 ($ma_ami $ma_ami 0) 
+    arc  9 13 ($a_ami $ma_ami 0)
+    arc  0  1 (0 $ma_in $ma_in) 
+    arc  4  5 (0 $ma_in $a_in)
+    arc  0  4 ($ma_in $ma_in 0)
+    arc  1  5 ($a_in $ma_in 0)
+);
+
+faces
+(
+);
+
+boundary
+(
+    in_to_out
+    {
+        type wall;
+        faces
+        (
+            ( 9 13 12  8)
+        );
+    }
+
+    ball
+    {
+        type wall;
+        faces
+        (
+            (1 5 4 0) 
+        );
+    }
+);
+
+// ************************************************************************* //

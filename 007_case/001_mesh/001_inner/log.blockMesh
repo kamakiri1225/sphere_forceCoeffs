@@ -1,0 +1,230 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b45f8f6f58-20200629 OPENFOAM=2006
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Sep 07 2022
+Time   : 19:51:10
+Host   : DESKTOP-CT961AV
+PID    : 4069
+I/O    : uncollated
+Case   : /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Using #calc at line 50 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8994fec324395951ee295ed01d2fdc53feb4a970.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8994fec324395951ee295ed01d2fdc53feb4a970.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8994fec324395951ee295ed01d2fdc53feb4a970.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_8994fec324395951ee295ed01d2fdc53feb4a970/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8994fec324395951ee295ed01d2fdc53feb4a970.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8994fec324395951ee295ed01d2fdc53feb4a970
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8994fec324395951ee295ed01d2fdc53feb4a970
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8994fec324395951ee295ed01d2fdc53feb4a970/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8994fec324395951ee295ed01d2fdc53feb4a970.so
+Using #calc at line 51 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8276da0bca9a1711267abe514e1e9d47b4187ab1.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8276da0bca9a1711267abe514e1e9d47b4187ab1.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8276da0bca9a1711267abe514e1e9d47b4187ab1.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_8276da0bca9a1711267abe514e1e9d47b4187ab1/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8276da0bca9a1711267abe514e1e9d47b4187ab1.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8276da0bca9a1711267abe514e1e9d47b4187ab1
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8276da0bca9a1711267abe514e1e9d47b4187ab1
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_8276da0bca9a1711267abe514e1e9d47b4187ab1/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_8276da0bca9a1711267abe514e1e9d47b4187ab1.so
+Using #calc at line 53 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_c888c6df4dd6f3d5887df73d341eb4957e94a914.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_c888c6df4dd6f3d5887df73d341eb4957e94a914.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_c888c6df4dd6f3d5887df73d341eb4957e94a914.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_c888c6df4dd6f3d5887df73d341eb4957e94a914/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_c888c6df4dd6f3d5887df73d341eb4957e94a914.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_c888c6df4dd6f3d5887df73d341eb4957e94a914
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_c888c6df4dd6f3d5887df73d341eb4957e94a914
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_c888c6df4dd6f3d5887df73d341eb4957e94a914/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_c888c6df4dd6f3d5887df73d341eb4957e94a914.so
+Using #calc at line 54 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_78666fc68a67d6cebd28a8b7d2768c52d975a902.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_78666fc68a67d6cebd28a8b7d2768c52d975a902.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_78666fc68a67d6cebd28a8b7d2768c52d975a902.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_78666fc68a67d6cebd28a8b7d2768c52d975a902/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_78666fc68a67d6cebd28a8b7d2768c52d975a902.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_78666fc68a67d6cebd28a8b7d2768c52d975a902
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_78666fc68a67d6cebd28a8b7d2768c52d975a902
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_78666fc68a67d6cebd28a8b7d2768c52d975a902/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_78666fc68a67d6cebd28a8b7d2768c52d975a902.so
+Using #calc at line 55 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_dcb3d9c52e4f357b54c1978f8fdf65f488fc87c5.so
+Using #calc at line 56 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_3c7f8b54524cbb1ccc676dfc48a01f682691bca8.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_3c7f8b54524cbb1ccc676dfc48a01f682691bca8.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_3c7f8b54524cbb1ccc676dfc48a01f682691bca8.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_3c7f8b54524cbb1ccc676dfc48a01f682691bca8/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_3c7f8b54524cbb1ccc676dfc48a01f682691bca8.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_3c7f8b54524cbb1ccc676dfc48a01f682691bca8
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_3c7f8b54524cbb1ccc676dfc48a01f682691bca8
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_3c7f8b54524cbb1ccc676dfc48a01f682691bca8/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_3c7f8b54524cbb1ccc676dfc48a01f682691bca8.so
+Using #calc at line 58 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_513c2e8c589249b673b666609277dbf33fe350c7.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_513c2e8c589249b673b666609277dbf33fe350c7.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_513c2e8c589249b673b666609277dbf33fe350c7.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_513c2e8c589249b673b666609277dbf33fe350c7/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_513c2e8c589249b673b666609277dbf33fe350c7.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_513c2e8c589249b673b666609277dbf33fe350c7
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_513c2e8c589249b673b666609277dbf33fe350c7
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_513c2e8c589249b673b666609277dbf33fe350c7/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_513c2e8c589249b673b666609277dbf33fe350c7.so
+Using #calc at line 59 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_2d71245ea097be40a2b05dd2c449fc84766c936f.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_2d71245ea097be40a2b05dd2c449fc84766c936f.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_2d71245ea097be40a2b05dd2c449fc84766c936f.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_2d71245ea097be40a2b05dd2c449fc84766c936f/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_2d71245ea097be40a2b05dd2c449fc84766c936f.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_2d71245ea097be40a2b05dd2c449fc84766c936f
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_2d71245ea097be40a2b05dd2c449fc84766c936f
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_2d71245ea097be40a2b05dd2c449fc84766c936f/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_2d71245ea097be40a2b05dd2c449fc84766c936f.so
+Using #calc at line 60 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_1e905e1ac8863d840699fe0651979bcba68d24b3.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_1e905e1ac8863d840699fe0651979bcba68d24b3.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_1e905e1ac8863d840699fe0651979bcba68d24b3.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_1e905e1ac8863d840699fe0651979bcba68d24b3/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_1e905e1ac8863d840699fe0651979bcba68d24b3.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_1e905e1ac8863d840699fe0651979bcba68d24b3
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_1e905e1ac8863d840699fe0651979bcba68d24b3
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_1e905e1ac8863d840699fe0651979bcba68d24b3/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_1e905e1ac8863d840699fe0651979bcba68d24b3.so
+Using #calc at line 61 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_23a8e24eb75b9bc2423ce3415e92281902e1c9fa.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_23a8e24eb75b9bc2423ce3415e92281902e1c9fa.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_23a8e24eb75b9bc2423ce3415e92281902e1c9fa.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_23a8e24eb75b9bc2423ce3415e92281902e1c9fa/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_23a8e24eb75b9bc2423ce3415e92281902e1c9fa.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_23a8e24eb75b9bc2423ce3415e92281902e1c9fa
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_23a8e24eb75b9bc2423ce3415e92281902e1c9fa
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_23a8e24eb75b9bc2423ce3415e92281902e1c9fa/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_23a8e24eb75b9bc2423ce3415e92281902e1c9fa.so
+Using #calc at line 63 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_693ad5031628d3a5883aec5810a7ef070a510068.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_693ad5031628d3a5883aec5810a7ef070a510068.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_693ad5031628d3a5883aec5810a7ef070a510068.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_693ad5031628d3a5883aec5810a7ef070a510068/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_693ad5031628d3a5883aec5810a7ef070a510068.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_693ad5031628d3a5883aec5810a7ef070a510068
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_693ad5031628d3a5883aec5810a7ef070a510068
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_693ad5031628d3a5883aec5810a7ef070a510068/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_693ad5031628d3a5883aec5810a7ef070a510068.so
+Using #calc at line 64 in file "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/system/blockMeshDict"
+Using #codeStream with "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_fe72df03c439baaae60d08ef8ae102002b232155.so"
+Could not load "/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_fe72df03c439baaae60d08ef8ae102002b232155.so"
+/mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_fe72df03c439baaae60d08ef8ae102002b232155.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_fe72df03c439baaae60d08ef8ae102002b232155/platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_fe72df03c439baaae60d08ef8ae102002b232155.so"
+Invoking wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_fe72df03c439baaae60d08ef8ae102002b232155
+wmake libso /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_fe72df03c439baaae60d08ef8ae102002b232155
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /mnt/c/work/openfoam/20211010_basketball_flow/20220202_sphere_coff/golfball-002/test/case_1/inner/dynamicCode/_fe72df03c439baaae60d08ef8ae102002b232155/../platforms/linux64Gcc63DPInt32Opt/lib/libcodeStream_fe72df03c439baaae60d08ef8ae102002b232155.so
+Creating block edges
+Creating block faces
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 12
+		Number of boundary faces : 12
+		Number of defined boundary faces : 12
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0025642 .. 0.0025642
+        j : 0.00256422 .. 0.00256422
+        k : 0.00116668 .. 0.00116668
+
+    Block 1 cell size :
+        i : 0.00256422 .. 0.00256422
+        j : 0.00256424 .. 0.00256424
+        k : 0.00116667 .. 0.00116667
+
+    Block 2 cell size :
+        i : 0.00256422 .. 0.00256422
+        j : 0.00256422 .. 0.00256422
+        k : 0.00116668 .. 0.00116668
+
+    Block 3 cell size :
+        i : 0.0025642 .. 0.0025642
+        j : 0.0025642 .. 0.0025642
+        k : 0.00116668 .. 0.00116668
+
+    Block 4 cell size :
+        i : 0.0025642 .. 0.0025642
+        j : 0.0025642 .. 0.0025642
+        k : 0.00116668 .. 0.00116668
+
+    Block 5 cell size :
+        i : 0.00256422 .. 0.00256422
+        j : 0.00256424 .. 0.00256424
+        k : 0.00116667 .. 0.00116667
+
+
+There are no merge patch pairs
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.05 -0.05 -0.05) (0.05 0.05 0.05)
+  nPoints: 86450
+  nCells: 82944
+  nFaces: 252288
+  nInternalFaces: 245376
+----------------
+Patches
+----------------
+  patch 0 (start: 245376 size: 3456) name: in_to_out
+  patch 1 (start: 248832 size: 3456) name: ball
+
+End
+
