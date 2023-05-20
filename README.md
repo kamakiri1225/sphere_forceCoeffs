@@ -38,4 +38,6 @@ simpleFoam > log.simpleFoam &
 
 ## バスケットボール形状(dynamicMesh_basketball)
 
+![32](https://github.com/kamakiri1225/sphere_forceCoeffs/assets/36812492/df7fdba0-9e18-4c0a-bef6-4529cf1fa407)
+
 1. [【回転するバスケットボールまわりの流れ(9)】dynamicMeshでバスケットボールの形状にフィット](https://takun-physics.net/16125/)
