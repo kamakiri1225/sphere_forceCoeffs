@@ -35,3 +35,7 @@ simpleFoam > log.simpleFoam &
 3. [【回転するバスケットボールまわりの流れ(3)】外部領域をblockMeshでメッシュ作成](https://takun-physics.net/15983/)
 4. [【回転するバスケットボールまわりの流れ(4)】OpenFOAMで無回転の球体まわりの流れ](https://takun-physics.net/16006/)
 5. [【回転するバスケットボールまわりの流れ(5)】球体周りの抗力係数が文献値と合わない原因](https://takun-physics.net/16043/)
+
+## バスケットボール形状(dynamicMesh_basketball)
+
+1. [【回転するバスケットボールまわりの流れ(9)】dynamicMeshでバスケットボールの形状にフィット](https://takun-physics.net/16125/)
